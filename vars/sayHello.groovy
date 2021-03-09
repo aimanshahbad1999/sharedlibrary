@@ -5,19 +5,21 @@ def call(String name = 'Student') {
 	if(name=='Student'){
 		pipeline{
 			agent any
-			stage("learn"){	
-				steps{
-					echo "Learn any technology"
+			stages{
+				stage("learn"){	
+					steps{
+						echo "Learn any technology"
+					}
 				}
-			}
-			stage("Practice"){	
-				steps{
-					echo "Practice to explore more"
+				stage("Practice"){	
+					steps{
+						echo "Practice to explore more"
+					}
 				}
-			}
-			stage("Apply"){	
-				steps{
-					echo "Build Some Project "
+				stage("Apply"){	
+					steps{
+						echo "Build Some Project "
+					}
 				}
 			}
 		}
@@ -25,19 +27,21 @@ def call(String name = 'Student') {
 	else{
 		pipeline{
 			agent any
-			stage("1"){	
-				steps{
-					echo "Do whatever you want "
+			stages{
+				stage("1"){	
+					steps{
+						echo "Do whatever you want "
+					}
 				}
-			}
-			stage("2"){	
-				steps{
-					echo "Do whatever you want"
+				stage("2"){	
+					steps{
+						echo "Do whatever you want"
+					}
 				}
-			}
-			stage("3"){	
-				steps{
-					echo "Do whatever you want "
+				stage("3"){	
+					steps{
+						echo "Do whatever you want "
+					}
 				}
 			}
 		}

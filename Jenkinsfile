@@ -30,6 +30,6 @@
 //      sayHello 'Dave'
 //  }
 properties([parameters([choice(choices: ['Student', 'Other'], name: 'Name')])])
-sayHello '$Name'
+sayHello "$Name"
 
 
